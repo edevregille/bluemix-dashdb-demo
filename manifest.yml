@@ -1,0 +1,9 @@
+applications:
+# replace the host variable below with your own unique one, as this one can be already taken
+- name: <APP_NAME>
+  command: node app.js
+  memory: 512M
+  instances: 1
+  path: .
+  services:
+  - <DASHDB SERVICE NAME>
